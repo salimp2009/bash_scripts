@@ -48,7 +48,6 @@ read -r -p "Please enter a user name: " USER
 echo "the username entered: ${USER}"
 
 read -r -p "Please enter directory name to look for under /home/: " DIR
-# DIR=$(read -r "Please enter directory name to look for under ${HOME}: ")
 
 if [[ -d "/home/${DIR}" ]]; then
 	echo "you entered: ${DIR}"
