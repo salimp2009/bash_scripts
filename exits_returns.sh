@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# $? gives the return exit code of previous command
+# 0 is success ; anything else is failure
+
 HOST="archlinux.org"
 ping -c 1 ${HOST}
 RETURN_CODE="$?"
