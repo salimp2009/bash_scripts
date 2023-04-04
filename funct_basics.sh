@@ -2,7 +2,9 @@
 
 # define a function
 hello() {
-	echo "hello from function hello :)"
+	for NAME in "$@"; do
+		echo "Hello $NAME"
+	done
 	now
 }
 
@@ -11,4 +13,15 @@ now() {
 }
 
 # calling function
-hello
+hello Semos Salim Didem Demir
+hello "$@"
+
+set_globalvar() {
+	GLOBAL_VAR=1
+	local LOCAL_VAR=2
+	echo "LOCAL_VAR = $LOCAL_VAR"
+}
+
+set_globalvar
+
+echo "GLOBAL_VAR= $GLOBAL_VAR"
