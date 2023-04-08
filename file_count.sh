@@ -1,4 +1,9 @@
 #!/bin/bash
+########################################
+# counts the files for a given directory
+# needs to be refactored using find
+# ls list directories as well
+########################################
 
 read -r -p "Please enter a directory name to count num of files: " DIR
 file_count() {
